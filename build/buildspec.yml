@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - npm install npm@latest -g
+      - npm install -g json
+      - export PATH=$PATH:build
+      
+  build:
+    commands:
+      - echo "builds......"
+      - build.sh
