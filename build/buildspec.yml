@@ -4,8 +4,11 @@ phases:
   install:
     commands:
       - npm install npm@latest -g
+      - npm i -g yarn
+      - npm i -g serverless@2.65.0
       - npm install -g json
       - export PATH=$PATH:build
+      - yarn config set strict-ssl false
       
   build:
     commands:
