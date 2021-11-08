@@ -8,7 +8,7 @@ phases:
   build:
     commands:
       - echo Setting image tag
-      - IMAGE_TAG=V1
+      - IMAGE_TAG=v1.5.0
       - echo Build started on `date`
       - echo Building the Docker image...          
       - docker build -t $IMAGE_REPO_NAME:$IMAGE_TAG .
