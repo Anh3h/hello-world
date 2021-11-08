@@ -24,4 +24,4 @@ echo "AccountID..........."
 aws sts get-caller-identity --query Account --output text
 
 echo "Running serverless deploy"
-sls deploy --stage=$STAGE --verbose
+#sls deploy --stage=$STAGE --verbose
